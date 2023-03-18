@@ -1,0 +1,40 @@
+﻿<Page x:Name="pgCurrencyConversionCalculator"
+    x:Class="Calculator.CurrencyConversionCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" Background="#FF114A70" Width="829" Height="844">
+
+
+    <Grid x:Name="grdConversion" Margin="0,0,10,0" RequestedTheme="Default" Height="844" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnConversion" Content="Conversion" Height="60" Margin="234,632,0,0" VerticalAlignment="Top" Width="383" FontSize="36" Click="BtnConversion_Click"/>
+        <Button x:Name="btnExit" Content="Exit" Height="60" Margin="338,729,0,0" VerticalAlignment="Top" Width="175" FontSize="36" Click="BtnExit_Click"/>
+        <TextBlock x:Name="lblTitle" HorizontalAlignment="Left" Height="90" Margin="86,63,0,0" Text="Currency Conversion Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Width="700" FontSize="48"/>
+        <TextBlock x:Name="lblAmount" HorizontalAlignment="Left" Height="35" Margin="120,174,0,0" Text="Amount $" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" FontSize="24"/>
+        <TextBlock x:Name="lblFrom" HorizontalAlignment="Left" Height="35" Margin="349,174,0,0" Text="From" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" FontSize="24"/>
+        <TextBlock x:Name="lblTo" HorizontalAlignment="Left" Height="38" Margin="548,174,0,0" Text="To" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" FontSize="24"/>
+        <TextBox x:Name="txtAmount" HorizontalAlignment="Left" Height="47" Margin="120,226,0,0" Text="" TextWrapping="NoWrap" VerticalAlignment="Top" Width="172" FontSize="16" FontStyle="Normal" FontWeight="Bold" TextChanged="TxtAmount_TextChanged"/>
+        <TextBlock x:Name="lblAmountFrom" HorizontalAlignment="Left" Height="34" Margin="118,296,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="341" FontSize="20"/>
+        <TextBlock x:Name="lblConvertedTo" HorizontalAlignment="Left" Height="53" Margin="118,356,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="591" FontSize="36"/>
+        <TextBlock x:Name="lblOneFromEqualTo" HorizontalAlignment="Left" Height="34" Margin="118,439,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="341" FontSize="20"/>
+        <TextBlock x:Name="lblOneToEqualFrom" HorizontalAlignment="Left" Height="34" Margin="118,499,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="341" FontSize="20"/>
+        <ComboBox x:Name="cboFrom" Height="47" Margin="349,226,0,0" Width="157" FontSize="16" FontStyle="Normal" FontWeight="Bold" SelectionChanged="CboFrom_SelectionChanged">
+            <ComboBoxItem>US Dollar</ComboBoxItem>
+            <ComboBoxItem>Euro</ComboBoxItem>
+            <ComboBoxItem>British Pound</ComboBoxItem>
+            <ComboBoxItem>Indian Rupee</ComboBoxItem>
+        </ComboBox>
+		<ComboBox x:Name="cboTo" Height="47" Margin="548,226,0,0" Width="169" FontSize="16" FontStyle="Normal" FontWeight="Bold" SelectionChanged="CboTo_SelectionChanged">
+            <ComboBoxItem>US Dollar</ComboBoxItem>
+            <ComboBoxItem>Euro</ComboBoxItem>
+            <ComboBoxItem>British Pound</ComboBoxItem>
+            <ComboBoxItem>Indian Rupee</ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Page>
