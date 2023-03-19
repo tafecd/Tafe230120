@@ -10,10 +10,10 @@
 
     <Grid Background="#FFF1D3D3">
         <TextBlock x:Name="textBlockUniversalCalculator" HorizontalAlignment="Left" Margin="251,37,0,0" Text="Universal Calculator" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" FontSize="72" FontWeight="Bold" FocusVisualPrimaryBrush="#FF1C1634"/>
-        <Button x:Name="btnMathsCalculator" Content="Maths Calculator" Margin="81,192,0,0" VerticalAlignment="Top" Height="120" Width="400" FontSize="36"/>
-        <Button x:Name="btnMortgageCalculator" Content="Mortgage Calculator" Margin="81,350,0,0" VerticalAlignment="Top" Height="120" Width="400" FontSize="36"/>
+        <Button x:Name="btnMathsCalculator" Content="Maths Calculator" Margin="81,192,0,0" VerticalAlignment="Top" Height="120" Width="400" FontSize="36" Click="btnMathsCalculator_Click"/>
+        <Button x:Name="btnMortgageCalculator" Content="Mortgage Calculator" Margin="81,350,0,0" VerticalAlignment="Top" Height="120" Width="400" FontSize="36" Click="btnMortgageCalculator_Click"/>
         <Button x:Name="btnCurrencyConverter" Content="Currency Converter" Margin="81,500,0,0" VerticalAlignment="Top" Height="120" Width="400" FontSize="36" Click="btnCurrencyConverter_Click"/>
-        <Button x:Name="btnExit" Content="Exit" Margin="81,654,0,0" VerticalAlignment="Top" Height="120" Width="400" FontSize="36"/>
+        <Button x:Name="btnExit" Content="Exit" Margin="81,654,0,0" VerticalAlignment="Top" Height="120" Width="400" FontSize="36" Click="btnExit_Click"/>
         <Image x:Name="imgAbacus" HorizontalAlignment="Left" Height="162" Margin="10,10,0,0" VerticalAlignment="Top" Width="198" Source="/Assets/abacus.PNG"/>
 
     </Grid>
