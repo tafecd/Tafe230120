@@ -51,5 +51,10 @@ namespace Calculator
 		{
 			Application.Current.Exit();
 		}
+
+		private void btnTripCalculator_Click(object sender, RoutedEventArgs e)
+		{
+			lblWarning.Text = "Trip calculator C# code will be developed later.";
+		}
 	}
 }
